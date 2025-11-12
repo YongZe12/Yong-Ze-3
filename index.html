@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Matters: Interactive Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Water Matters 💧</h1>
+    <nav>
+      <button class="tablink active" data-tab="definition">Definition</button>
+      <button class="tablink" data-tab="causes">Causes</button>
+      <button class="tablink" data-tab="effects">Effects</button>
+      <button class="tablink" data-tab="solutions">Solutions</button>
+    </nav>
+  </header>
+  <main>
+    <section id="definition" class="tabcontent active">
+      <h2>What is Water Scarcity?</h2>
+      <p>
+        Water scarcity refers to the lack of sufficient available water resources to meet the demands of usage in a region. It impacts health, livelihood, and the environment.
+      </p>
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Dry cracked soil" />
+    </section>
+
+    <section id="causes" class="tabcontent">
+      <h2>Main Causes</h2>
+      <ul>
+        <li>Climate change leading to droughts</li>
+        <li>Pollution of freshwater sources</li>
+        <li>Overuse in agriculture & industry</li>
+        <li>Poor infrastructure & management</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1508873699372-01c3c50e0b44?auto=format&fit=crop&w=600&q=80" alt="Polluted water" />
+    </section>
+
+    <section id="effects" class="tabcontent">
+      <h2>Effects on Life</h2>
+      <blockquote>
+        "Millions suffer due to unsafe water." <br>
+        — UNICEF
+      </blockquote>
+      <ul>
+        <li>Spread of diseases like cholera</li>
+        <li>Hunger due to crop failure</li>
+        <li>Loss of biodiversity</li>
+        <li>Migration & conflict over water</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1458693443655-8f244b44c2d0?auto=format&fit=crop&w=600&q=80" alt="Child at water pump" />
+    </section>
+
+    <section id="solutions" class="tabcontent">
+      <h2>How can YOU help?</h2>
+      <ul>
+        <li>Reduce water waste at home</li>
+        <li>Support organizations working for clean water</li>
+        <li>Educate others</li>
+        <li>Participate in local clean-ups</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1519121782403-6edb763e3e64?auto=format&fit=crop&w=600&q=80" alt="Clean water glass" />
+    </section>
+  </main>
+
+  <footer>
+    <section id="feedback">
+      <h2>💡 Share Your Thoughts</h2>
+      <form id="feedbackForm">
+        <label for="userFeedback">What solutions or ideas do you have?</label>
+        <textarea id="userFeedback" name="feedback" rows="3" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="feedbackMessage"></div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
