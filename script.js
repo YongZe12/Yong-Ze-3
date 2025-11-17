@@ -81,7 +81,7 @@ function animateDrops() {
     let drops = Array.from(gameArea.getElementsByClassName('water-drop'));
     drops.forEach(drop => {
       let top = parseFloat(drop.style.top);
-      drop.style.top = (top + 8) + "px";
+      drop.style.top = (top + 3) + "px";
       // Check if reached waste bin (bottom)
       if (top > 220) drop.remove();
     });
