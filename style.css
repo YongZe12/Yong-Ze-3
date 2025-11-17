@@ -1,4 +1,120 @@
-/* Add to the bottom of your CSS file */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fcff;
+  color: #223;
+  margin: 0;
+}
+
+header {
+  background: #44a1e0;
+  color: white;
+  padding: 1.2rem 0 0.7rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px #0002;
+}
+
+nav {
+  margin: 1rem 0 0 0;
+}
+
+.tablink {
+  background: #fff;
+  border: 1px solid #44a1e0;
+  color: #44a1e0;
+  padding: 0.5rem 1.5rem;
+  margin: 0.12rem;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s;
+}
+.tablink.active, .tablink:hover {
+  background: #44a1e0;
+  color: #fff;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto 1rem auto;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 16px #44a1e04a;
+  border-radius: 12px;
+  min-height: 340px;
+}
+
+.tabcontent {
+  display: none;
+  animation: fadeIn 0.5s;
+}
+.tabcontent.active {
+  display: block;
+}
+
+h2 {
+  color: #1a72b0;
+  margin-top: 0;
+}
+
+img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px #8892b333;
+}
+
+blockquote {
+  font-style: italic;
+  background: #e5f3fb;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #44a1e0;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 1.5rem 0 0 0;
+  background: #ecf8ff;
+  border-top: 3px solid #44a1e0;
+  text-align: center;
+}
+
+#feedbackForm {
+  margin: 0.8rem auto;
+  max-width: 480px;
+}
+#userFeedback {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #bcd;
+  padding: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+#feedbackForm button {
+  padding: 0.4rem 1.2rem;
+  border-radius: 22px;
+  border: none;
+  background: #44a1e0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  box-shadow: 0 2px 6px #44a1e06b;
+}
+#feedbackMessage {
+  color: #1a72b0;
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px);}
+  to   { opacity: 1; transform: none;}
+}/* Add to the bottom of your CSS file */
 
 #water-game-area {
   position: relative;
