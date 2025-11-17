@@ -1,7 +1,3 @@
-// Tab switching logic (existing)...
-// Feedback form logic (existing)...
-
-// -- GAME: Save the Water Drops --
 let gameInterval, gameActive = false, dropId = 0, savedCount = 0, gameDuration = 20;
 const gameArea = document.getElementById('water-game-area');
 const scoreArea = document.getElementById('water-game-score');
@@ -61,7 +57,7 @@ function animateDrops() {
     drops.forEach(drop => {
       let top = parseFloat(drop.style.top);
       drop.style.top = (top + 8) + "px";
-      // Check if reached waste bin (bottom)
+
       if (top > 220) drop.remove();
     });
     requestAnimationFrame(step);
@@ -70,9 +66,8 @@ function animateDrops() {
 }
 
 startBtn && startBtn.addEventListener('click', startWaterGame);
-clearGame(); // Show waste bin
+clearGame(); 
 
-// -- QUIZ LOGIC --
 document.getElementById('quizForm').addEventListener('submit', function(e){
   e.preventDefault();
   let score = 0;
